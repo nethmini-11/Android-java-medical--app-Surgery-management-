@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:id="@+id/mainLayout"
+    >
+
+    <TextView
+        android:id="@+id/head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginLeft="28dp"
+        android:text="Your Applied Surgery"
+        android:textColor="#0319AE"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="20dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/patient_id_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textColor="#000"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/patient_pid_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="4dp"
+                android:gravity="center_horizontal"
+                android:text="Patient ID"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/patient_id_txt"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/patient_name_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="patient Name"
+                app:layout_constraintStart_toStartOf="@+id/patient_pid_txt"
+                app:layout_constraintTop_toBottomOf="@+id/patient_pid_txt" />
+
+            <TextView
+                android:id="@+id/patient_con_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="patient Condition"
+                app:layout_constraintStart_toStartOf="@+id/patient_name_txt"
+                app:layout_constraintTop_toBottomOf="@+id/patient_name_txt" />
+
+            <TextView
+                android:id="@+id/patient_typ_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Surgery Type"
+                app:layout_constraintStart_toStartOf="@+id/patient_con_txt"
+                app:layout_constraintTop_toBottomOf="@+id/patient_con_txt" />
+
+            <TextView
+                android:id="@+id/patient_phone_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="patient phone"
+                app:layout_constraintStart_toStartOf="@+id/patient_typ_txt"
+                app:layout_constraintTop_toBottomOf="@+id/patient_typ_txt" />
+
+            <TextView
+                android:id="@+id/patient_trustee_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="patient trustee name"
+                app:layout_constraintStart_toStartOf="@+id/patient_phone_txt"
+                app:layout_constraintTop_toBottomOf="@+id/patient_phone_txt" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

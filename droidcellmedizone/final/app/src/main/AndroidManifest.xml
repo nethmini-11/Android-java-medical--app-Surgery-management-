@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.app.droidcell.medizone">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".UpdateActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".AddActivity"
+            android:label=""
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:label=""
+            android:parentActivityName=".front"/>
+        <activity
+            android:name=".front"
+            android:label=""
+            android:parentActivityName=".surgeryHomepage"
+            />
+        <activity
+            android:name=".calActivity"
+            android:label=""
+            android:parentActivityName=".splashScreen"
+            />
+        <activity
+            android:name=".AlertBox"
+            android:label=""
+            android:parentActivityName=".calActivity"
+            />
+        <activity
+            android:name=".summary"
+            android:label=""
+            android:parentActivityName=".calActivity"
+            />
+        <activity
+            android:name=".splashScreen"
+            android:label=""
+            android:parentActivityName=".surgeryHomepage"
+            />
+        <activity
+            android:name=".LetterMain"
+            android:label=""
+            android:parentActivityName=".surgeryHomepage"
+            />
+        <activity
+            android:name=".AddLetter"
+            android:label=""
+            android:parentActivityName=".LetterMain"
+            />
+        <activity
+            android:name=".UpdateLetter"
+            android:label=""
+            android:parentActivityName=".LetterMain"
+            />
+        <activity
+            android:name=".surgeryHomepage">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

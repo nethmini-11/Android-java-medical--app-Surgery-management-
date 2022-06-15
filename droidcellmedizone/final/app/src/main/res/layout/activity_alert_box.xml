@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="420dp"
+    tools:context=".AlertBox"
+    android:orientation="vertical"
+    android:background="#D5E5ED"
+    android:padding="50dp"
+    >
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:hint="Your Surgery Type"
+        android:background="@drawable/custom"
+        android:textSize="13dp"></EditText>
+
+    <EditText
+        android:id="@+id/doc"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Your Doctor Fee"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom"
+        android:textSize="13dp"
+        android:gravity="center">
+    </EditText>
+    <EditText
+        android:id="@+id/rate"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint=" Selected Pakage Fee"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom"
+        android:inputType="numberDecimal"
+        android:textSize="13dp"
+        android:gravity="center">
+    </EditText>
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/qty"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/custom"
+        android:hint="Number of days prescribed for Surgery"
+        android:textSize="13dp"
+        android:inputType="number"
+        android:gravity="center">
+    </EditText>
+
+    <EditText
+        android:id="@+id/ins"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:background="@drawable/custom"
+        android:hint="Your Insurance Coverage"
+        android:inputType="number"
+        android:textSize="13dp"></EditText>
+
+</LinearLayout>
