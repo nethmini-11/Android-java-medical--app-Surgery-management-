@@ -9,7 +9,9 @@ Android Studio
 
 ## Technoogies
 Java
+
 Xml
+
 SqLite
 ## Sample ScreenShots
 
